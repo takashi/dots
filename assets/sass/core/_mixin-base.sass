@@ -1,0 +1,45 @@
+@mixin round($color,$diameter:40px)
+  float: left
+  width: $diameter
+  height: $diameter
+  background: $color
+  -moz-border-radius: 50px
+  -webkit-border-radius: 50px
+  border-radius: 50px
+  color: $date-font-color
+
+@mixin rounded-date
+  @include round($date-bg-color)
+  font-family: 'Lusitana', serif
+  p
+    text-align: center
+    padding-top: 4px
+    .month
+      padding-left: 4px
+      font-size: 10px
+    .day
+      font-size: 14px
+
+@mixin article-body
+  p
+    margin-bottom: 10px
+  pre
+    padding: 8px 15px
+    background: #F8F8F8
+    border-radius: 5px
+    border: 1px solid $code-box-border-color
+    overflow-x: auto
+    margin: 10px 0px
+  img
+    width: 100%
+  blockquote
+    font-style: italic
+    display: block
+    -webkit-margin-before: 1em
+    -webkit-margin-after: 1em
+    -webkit-margin-start: 40px
+    -webkit-margin-end: 40px
+  a
+    color: $date-bg-color
+  a:hover
+    text-decoration: none

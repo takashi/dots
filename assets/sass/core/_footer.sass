@@ -1,0 +1,32 @@
+.footer
+  .footer_inner
+    width: 81%
+    margin: 0 auto
+    height: 150px
+    @include zurui-line-top
+    section
+      width: 375px
+      height: 55px
+      margin: 50px auto
+      .block
+        float: left
+        width: 33%
+        height: 55px
+        a
+          text-decoration: none
+          .round
+            font-size: 30px
+            line-height: 45px
+            text-align: center
+            margin: 0 40px 10px
+            color: white
+            @include round($date-bg-color, 45px)
+        a:hover
+          color: $date-bg-color
+        a:active
+          color: $date-bg-color
+        .comment
+          font-size: 12px
+          margin-top: 10px
+          text-align: center
+          line-height: 15px

@@ -1,0 +1,13 @@
+# standard jekyll configuration
+auto: true
+server: true
+markdown: maruku
+
+safe: false
+lsi: false
+
+permalink: date
+pygments: true
+exclude: ['Rakefile', 'README.md', 'config.rb']
+
+site: 'dots'

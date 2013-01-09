@@ -1,0 +1,52 @@
+---
+layout: default
+---
+
+{% for post in site.posts %}
+
+
+{% capture date %}{{ post.date }}{% endcapture %}
+{% capture this_year %}{{ date | date: "%Y" }}{% endcapture %}
+
+%article.articles
+  {% unless year == this_year %}
+  {% assign year = this_year %}
+  %ul.year_list
+    %h3 {{ date | date: "%Y" }}
+
+  %section.cont
+    .date
+      %p
+        %span.month {{ post.date | date: "%b" }}
+        %br
+        %span.day {{ post.date | date: "%e" }}
+    %a.title{ href: "{{ post.url }}" } {{ post.title }}
+    {% if post.tags %}
+    %ul.tags
+      {% for tags in post.tags%}
+      %li
+        {{tags}}
+      {% endfor %}
+      %br
+    {% endif %}
+
+  {% else %}
+  %ul.year_list
+  %section.cont
+    .date
+      %p
+        %span.month {{ post.date | date: "%b" }}
+        %br
+        %span.day {{ post.date | date: "%e" }}
+
+    %a.title{ href: "{{ post.url }}" } {{ post.title }}
+    {% if post.tags %}
+    %ul.tags
+      {% for tags in post.tags%}
+      %li
+        {{tags}}
+      {% endfor %}
+      %br
+    {% endif %}
+  {% endunless %}
+{% endfor %}

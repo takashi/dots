@@ -1,0 +1,58 @@
+---
+layout: default
+---
+
+{% for post in site.posts %}
+{% capture date %}{{ post.date }}{% endcapture %}
+{% capture this_year %}{{ date | date: "%Y" }}{% endcapture %}
+<article class='articles'>
+  {% unless year == this_year %}
+  {% assign year = this_year %}
+  <ul class='year_list'>
+    <h3>{{ date | date: "%Y" }}</h3>
+  </ul>
+  <section class='cont'>
+    <div class='date'>
+      <p>
+        <span class='month'>{{ post.date | date: "%b" }}</span>
+        <br />
+        <span class='day'>{{ post.date | date: "%e" }}</span>
+      </p>
+    </div>
+    <a class='title' href='{{ post.url }}'>{{ post.title }}</a>
+    {% if post.tags %}
+    <ul class='tags'>
+      {% for tags in post.tags%}
+      <li>
+        {{tags}}
+      </li>
+      {% endfor %}
+      <br />
+    </ul>
+    {% endif %}
+  </section>
+  {% else %}
+  <ul class='year_list'></ul>
+  <section class='cont'>
+    <div class='date'>
+      <p>
+        <span class='month'>{{ post.date | date: "%b" }}</span>
+        <br />
+        <span class='day'>{{ post.date | date: "%e" }}</span>
+      </p>
+    </div>
+    <a class='title' href='{{ post.url }}'>{{ post.title }}</a>
+    {% if post.tags %}
+    <ul class='tags'>
+      {% for tags in post.tags%}
+      <li>
+        {{tags}}
+      </li>
+      {% endfor %}
+      <br />
+    </ul>
+    {% endif %}
+  </section>
+  {% endunless %}
+</article>
+{% endfor %}

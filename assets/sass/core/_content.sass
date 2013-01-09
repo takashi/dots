@@ -1,0 +1,53 @@
+$total-columns: 8 // 12 columns
+$column-width: 4em // columns are 4em wide
+$gutter-width: 1em // with 1em gutters
+$grid-padding: 1em // and 1em padding on the grid container
+
+// global settings
+body
+  font-family: 'Open Sans',"ヒラギノ明朝 Pro W6","Hiragino Mincho Pro", "HGS明朝E", "ＭＳ Ｐ明朝", Helvetica, sans-serif
+  font-weight: 100
+
+.container
+  @include container
+
+#content
+  .container
+    .articles
+      height: 40px
+      margin: 0 0 20px 0
+      .year_list
+        width: 34px
+        float: left
+        margin: 13px 30px 0 0
+        color: $article-title-color
+        font-size: 14px
+      .cont
+        // margin-bottom: 20px
+        margin: 10px 0px 10px 10px
+        .date
+          margin: 0px 10px 10px 0
+          @include rounded-date
+        .title
+          color: $article-title-color
+          font-size: 15px
+          text-decoration: none
+        .title: hover
+        .tags
+          li
+            float: left
+            font-size: 11px
+            margin: 5px 5px 0 0
+
+.post_article
+  .post_title
+    font-size: 20px
+  .postdate
+    font-size: 12px
+  margin-top: 20px
+  font-size: $article-body-font-size
+  @include container
+  line-height: $article-body-font-size + ($article-body-font-size / 1.5)
+  .article_body
+    margin-top: 20px
+    @include article-body

@@ -1,0 +1,14 @@
+= "---"
+= "layout: default"
+= "---"
+
+
+%article.post_article
+  %h2.post_title {{ page.title }}
+
+  {% if page.date %}
+  .postdate Posted on {{ page.date | date: "%b %e %Y" }}
+  {% endif %}
+
+  .article_body
+    {{content}}

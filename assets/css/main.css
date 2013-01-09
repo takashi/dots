@@ -1,0 +1,304 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+#header {
+  margin: 20px 0 30px 0;
+  height: 25px;
+}
+#header .container_header {
+  width: 500px;
+  margin: auto;
+}
+#header .name {
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: rgba(255, 255, 255, 0.3) -1px 0 0;
+  -moz-box-shadow: rgba(255, 255, 255, 0.3) -1px 0 0;
+  box-shadow: rgba(255, 255, 255, 0.3) -1px 0 0;
+  padding-left: 10px;
+  line-height: 21px;
+  font-weight: 100;
+  font-size: 14px;
+  width: 100px;
+  float: left;
+  text-transform: uppercase;
+}
+#header .name a {
+  color: #a4a4a4;
+  text-decoration: none;
+}
+#header .name span {
+  color: #cccccc;
+  line-height: 22px;
+  margin-left: -3px;
+  font-size: 15px;
+}
+#header .menu {
+  float: left;
+  font-size: 14px;
+  line-height: 23px;
+}
+#header .menu li {
+  float: left;
+  margin-right: 1em;
+}
+#header .menu li a {
+  text-decoration: none;
+  color: #cccccc;
+}
+#header .menu li a:hover {
+  text-decoration: underline;
+}
+
+body {
+  font-family: "Open Sans", "ヒラギノ明朝 Pro W6", "Hiragino Mincho Pro", "HGS明朝E", "ＭＳ Ｐ明朝", Helvetica, sans-serif;
+  font-weight: 100;
+}
+
+.container {
+  *zoom: 1;
+  max-width: 39em;
+  _width: 39em;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#content .container .articles {
+  height: 40px;
+  margin: 0 0 20px 0;
+}
+#content .container .articles .year_list {
+  width: 34px;
+  float: left;
+  margin: 13px 30px 0 0;
+  color: #515151;
+  font-size: 14px;
+}
+#content .container .articles .cont {
+  margin: 10px 0px 10px 10px;
+  .title: hover;
+}
+#content .container .articles .cont .date {
+  margin: 0px 10px 10px 0;
+  float: left;
+  width: 40px;
+  height: 40px;
+  background: #7bb5c9;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  color: white;
+  font-family: "Lusitana", serif;
+}
+#content .container .articles .cont .date p {
+  text-align: center;
+  padding-top: 4px;
+}
+#content .container .articles .cont .date p .month {
+  padding-left: 4px;
+  font-size: 10px;
+}
+#content .container .articles .cont .date p .day {
+  font-size: 14px;
+}
+#content .container .articles .cont .title {
+  color: #515151;
+  font-size: 15px;
+  text-decoration: none;
+}
+#content .container .articles .cont .tags li {
+  float: left;
+  font-size: 11px;
+  margin: 5px 5px 0 0;
+}
+
+.post_article {
+  margin-top: 20px;
+  font-size: 13px;
+  *zoom: 1;
+  max-width: 39em;
+  _width: 39em;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 21.66667px;
+}
+.post_article .post_title {
+  font-size: 20px;
+}
+.post_article .postdate {
+  font-size: 12px;
+}
+.post_article:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.post_article .article_body {
+  margin-top: 20px;
+}
+.post_article .article_body p {
+  margin-bottom: 10px;
+}
+.post_article .article_body pre {
+  padding: 8px 15px;
+  background: #f8f8f8;
+  border-radius: 5px;
+  border: 1px solid #e5e5e5;
+  overflow-x: auto;
+  margin: 10px 0px;
+}
+.post_article .article_body img {
+  width: 100%;
+}
+.post_article .article_body blockquote {
+  font-style: italic;
+  display: block;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 40px;
+  -webkit-margin-end: 40px;
+}
+.post_article .article_body a {
+  color: #7bb5c9;
+}
+.post_article .article_body a:hover {
+  text-decoration: none;
+}
+
+.footer .footer_inner {
+  width: 81%;
+  margin: 0 auto;
+  height: 150px;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: rgba(255, 255, 255, 0.3) 0 1px 0 inset;
+  -moz-box-shadow: rgba(255, 255, 255, 0.3) 0 1px 0 inset;
+  box-shadow: rgba(255, 255, 255, 0.3) 0 1px 0 inset;
+}
+.footer .footer_inner section {
+  width: 375px;
+  height: 55px;
+  margin: 50px auto;
+}
+.footer .footer_inner section .block {
+  float: left;
+  width: 33%;
+  height: 55px;
+}
+.footer .footer_inner section .block a {
+  text-decoration: none;
+}
+.footer .footer_inner section .block a .round {
+  font-size: 30px;
+  line-height: 45px;
+  text-align: center;
+  margin: 0 40px 10px;
+  color: white;
+  float: left;
+  width: 45px;
+  height: 45px;
+  background: #7bb5c9;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  color: white;
+}
+.footer .footer_inner section .block a:hover {
+  color: #7bb5c9;
+}
+.footer .footer_inner section .block a:active {
+  color: #7bb5c9;
+}
+.footer .footer_inner section .block .comment {
+  font-size: 12px;
+  margin-top: 10px;
+  text-align: center;
+  line-height: 15px;
+}
+
+@media only screen and (max-width: 767px) {
+  #content .container .articles {
+    margin: 0 0 35px 0;
+  }
+}
+@media only screen and (max-width: 320px) {
+  #content .container .articles {
+    margin: 0 0 55px 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .footer .footer_inner section {
+    width: 105px;
+    margin: 30px auto;
+  }
+  .footer .footer_inner section .block {
+    float: none;
+  }
+  .footer .footer_inner section .block a .round {
+    margin: 15px 30px;
+  }
+  .footer .footer_inner section .block .comment {
+    display: none;
+  }
+}
