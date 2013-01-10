@@ -8,6 +8,11 @@ Many thanks to [mojombo](https://github.com/mojombo) for his awesome work on
 [reference](http://tom.preston-werner.com/). Enjoy your stay!
 
 
+sample:
+
+[tak0303.github.com](http://tak0303.github.com/)
+
+
 # Notice
 
 This theme is using [haml](https://github.com/haml/haml), [sass](https://github.com/nex3/sass), [compass](https://github.com/chriseppstein/compass) and [susy](https://github.com/ericam/susy).
