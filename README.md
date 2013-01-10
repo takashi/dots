@@ -11,7 +11,7 @@ Many thanks to [mojombo](https://github.com/mojombo) for his awesome work on
 # Notice
 
 This theme is using [haml](https://github.com/haml/haml), [sass](https://github.com/nex3/sass), [compass](https://github.com/chriseppstein/compass) and [susy](https://github.com/ericam/susy).
-please istall these dependencies to use this theme
+please install these dependencies to use this theme
 
 
 # Rake Commands
